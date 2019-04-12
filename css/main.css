@@ -35,16 +35,16 @@ html {
     grid-column-end: 3; 
 }
 
-.collapse {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
+
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 
 .expand {
@@ -57,20 +57,29 @@ html {
 .content {
     background-color: #cafcc2;
     grid-area: content;
+    text-align: center;
 }
 
 .buttons {
     grid-area: buttons;
-    background-color: #fcc2f0;   
+    background-color: #fcc2f0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 20px;   
 }
 
-
 .water-glass {
-    width: 100px;
-    height: 600px;
-    border: 3px solid black;
-    top: 10px;
-    left: 50%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: inline-block;
+    width: 250px;
+    height: 400px;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
 }
 
 
