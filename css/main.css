@@ -79,6 +79,7 @@ button {
     border-bottom: 3px solid black;
     border-bottom-left-radius: 40%;
     border-bottom-right-radius: 40%;
+    overflow: hidden;
 }
 
 .inner-glass {
