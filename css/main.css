@@ -80,15 +80,14 @@ button {
     border-bottom-left-radius: 40%;
     border-bottom-right-radius: 40%;
     overflow: hidden;
+    display: inline-block;
 }
 
 .inner-glass {
     background: lightblue;
-    /*position: absolute;*/
     width: 100%;
     height: 100%;
     top: 100%;
-    display: inline-grid;
 }
 
 
