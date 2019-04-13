@@ -47,7 +47,7 @@ button {
     font-size: 16px;
 }
 
-.expand {
+#rules {
   padding: 0 18px;
   display: none;
   overflow: hidden;
