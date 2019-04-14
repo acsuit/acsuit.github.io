@@ -12,7 +12,6 @@ $('#reset-button').click(function() {
 		waterLevel = waterPercent + '%';
       	return waterLevel;
     });
-    console.log('inner ' + waterPercent);
 });
 
 $('.5percent').click(function() {
@@ -46,7 +45,7 @@ $('.tasks button').click(function(){
 		$('.score').html('<p>KEEP GOING! '  + waterPercent + '</p>');
 	} else if (waterPercent > 100) {
 		console.log('lose');
-		$('.buttons button').attr('disabled', 'disabled');
+		$('.tasks button').attr('disabled', 'disabled');
 		$('.score').html('<p>YOU LOSE! '  + waterPercent + '</p>');
 	} else {
 		$('.score').html('<p>YOU WIN! '  + waterPercent + '</p>');
@@ -54,13 +53,17 @@ $('.tasks button').click(function(){
 		console.log('win');
 	};
 });
-console.log(waterPercent);
+
 
 $('#reset-button').click(function() {
 	waterPercent = 0;
     $('.inner-glass').height(function(){
 		waterLevel = waterPercent + '%';
-      	/*return waterLevel;*/
+      	return waterLevel;
     });
+    $('.score').html('<p>RESET!' + waterPercent + '</p>');
+    $('.tasks button').attr('disabled', falses);
     console.log('inner ' + waterPercent);
 });
+
+console.log(waterPercent);
