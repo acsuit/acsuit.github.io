@@ -42,9 +42,11 @@ $('.buttons button').click( function(){
 		$('.score').html('<p>KEEP GOING! '  + waterPercent + '</p>');
 	} else if (waterPercent > 100) {
 		console.log('lose');
+		$('.buttons button').attr('disabled', 'disabled');
 		$('.score').html('<p>YOU LOSE! '  + waterPercent + '</p>');
 	} else {
 		$('.score').html('<p>YOU WIN! '  + waterPercent + '</p>');
+		$('.buttons button').attr('disabled', 'disabled');
 		console.log('win');
 	};
 });
