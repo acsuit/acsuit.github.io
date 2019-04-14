@@ -1,10 +1,24 @@
 $('#toggle').click(function() {
 	console.log($('.rules').css('display'));
 	console.log('click');
-	$('.rules').toggle();
+	$('.container').toggle();
 });
 
 var waterPercent = 0;
+
+$('.buttons button').click( function(){ 
+	console.log('work bitch');
+	if (waterPercent < 100) {
+		console.log('hi');
+		$('.score').html('<p>KEEP GOING!</p>');
+	} else if (waterPercent > 100) {
+		console.log('lose');
+		$('.score').html('<p>YOU LOSE!</p>');
+	} else {
+		$('.score').html('<p>YOU WIN!</p>');
+		console.log('lose');
+	};
+});
 
 $('.5percent').click(function() {
     $('.inner-glass').height(function(){
@@ -32,3 +46,4 @@ $('.15percent').click(function() {
       	return rightPercent;
     });
 });
+
