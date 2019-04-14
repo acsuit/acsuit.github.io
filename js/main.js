@@ -6,36 +6,40 @@ $('#toggle').click(function() {
 
 var waterPercent = 0;
 
-
+$('#reset-button').click(function() {
+    $('.inner-glass').height(function(){
+    	waterPercent = 0;
+		waterLevel = waterPercent + '%';
+      	return waterLevel;
+    });
+    console.log('inner ' + waterPercent);
+});
 
 $('.5percent').click(function() {
     $('.inner-glass').height(function(){
     	waterPercent += 5;
-    	console.log(waterPercent);
     	rightPercent = waterPercent + '%';
-      	return rightPercent;
+    	return rightPercent;
     });
 });
 
 $('.10percent').click(function() {
     $('.inner-glass').height(function(){
     	waterPercent += 10;
-    	console.log(waterPercent);
     	rightPercent = waterPercent + '%';
-      	return rightPercent;
+    	return rightPercent;
     });
 });
 
 $('.15percent').click(function() {
     $('.inner-glass').height(function(){
     	waterPercent += 15;
-    	console.log(waterPercent);
     	rightPercent = waterPercent + '%';
-      	return rightPercent;
+    	return rightPercent;
     });
 });
 
-$('.buttons button').click( function(){ 
+$('.tasks button').click(function(){ 
 	console.log('work bitch');
 	if (waterPercent < 100) {
 		console.log('hi');
@@ -46,8 +50,17 @@ $('.buttons button').click( function(){
 		$('.score').html('<p>YOU LOSE! '  + waterPercent + '</p>');
 	} else {
 		$('.score').html('<p>YOU WIN! '  + waterPercent + '</p>');
-		$('.buttons button').attr('disabled', 'disabled');
+		$('.tasks button').attr('disabled', 'disabled');
 		console.log('win');
 	};
 });
+console.log(waterPercent);
 
+$('#reset-button').click(function() {
+	waterPercent = 0;
+    $('.inner-glass').height(function(){
+		waterLevel = waterPercent + '%';
+      	/*return waterLevel;*/
+    });
+    console.log('inner ' + waterPercent);
+});
