@@ -64,9 +64,12 @@ button {
 }
 
 #toggle {
-     display: block; 
+     display: block;
      margin: 0 auto;
-     background-color: #80dfff;
+     background-color: transparent;
+     color: #003300;
+     font-size: 25px;
+     font-family: 'Pacifico', cursive;
 }
 
 .container {
