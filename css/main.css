@@ -35,7 +35,12 @@ html {
     grid-area: header;
     grid-column-start: 1; 
     grid-column-end: 3; 
+    justify-content: center;
+}
+
+.title {
     background-color: #dcffcc;
+    overflow: hidden;
 }
 
 h1 {
@@ -46,7 +51,7 @@ h1 {
 
 
 button {
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50;
     border: none;
     color: white;
     padding: 10px 32px;
@@ -54,18 +59,18 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    border-radius: 3px;
+    margin: 2px;
 }
 
 #toggle {
      display: block; 
-     margin: 0 auto; 
+     margin: 0 auto;
 }
 
-#reset {
-
-}
 .container {
     display: none;
+    justify-content: center;
 }
 
 .rules {
@@ -75,6 +80,11 @@ button {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
+    background-color: white;
+    width: 750px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #dcffcc;
 }
 
 .instructions {
@@ -92,7 +102,11 @@ button {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-top: 20px;   
+    margin: 20px;   
+}
+
+#reset {
+
 }
 
 .water-glass {
