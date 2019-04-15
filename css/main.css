@@ -28,12 +28,14 @@ html {
         "content buttons";
     font-family: 'Roboto', sans-serif;
     background-color: #eeffe6;
+    color: #003300;
 }
 
 .header {
     grid-area: header;
     grid-column-start: 1; 
     grid-column-end: 3; 
+    background-color: #dcffcc;
 }
 
 h1 {
@@ -55,7 +57,8 @@ button {
 }
 
 #toggle {
-
+     display: block; 
+     margin: 0 auto; 
 }
 
 #reset {
