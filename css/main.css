@@ -103,9 +103,14 @@ button {
 .buttons div {
     grid-area: buttons;
     display: flex;
-    justify-content: center;
     flex-direction: column;
     margin: 20px;   
+}
+
+.buttons button {
+    margin-left: 20%;
+    margin-right: 20%;
+    justify-content: right;
 }
 
 .tasks button {
