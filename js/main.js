@@ -12,9 +12,17 @@ $('#reset-button').click(function() {
     });
 });
 
-$('.5percent').click(function() {
+$('.3percent').click(function() {
     $('.inner-glass').height(function(){
-    	waterPercent += 5;
+    	waterPercent += 3;
+    	rightPercent = waterPercent + '%';
+    	return rightPercent;
+    });
+});
+
+$('.7percent').click(function() {
+    $('.inner-glass').height(function(){
+    	waterPercent += 7;
     	rightPercent = waterPercent + '%';
     	return rightPercent;
     });
@@ -28,18 +36,18 @@ $('.10percent').click(function() {
     });
 });
 
-$('.15percent').click(function() {
+$('.17percent').click(function() {
     $('.inner-glass').height(function(){
-    	waterPercent += 15;
+    	waterPercent += 17;
     	rightPercent = waterPercent + '%';
     	return rightPercent;
     });
 });
 
 $('.tasks button').click(function(){ 
-	if (waterPercent < 100) {
+	if (waterPercent < 90) {
 		$('.score').html('<p>KEEP GOING! '  + waterPercent + '</p>');
-	} else if (waterPercent > 100) {
+	} else if (waterPercent > 90) {
 		$('.tasks button').attr('disabled', 'disabled');
 		$('.score').html('<p>YOU LOSE! '  + waterPercent + '</p>');
 	} else {
