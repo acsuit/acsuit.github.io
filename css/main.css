@@ -22,7 +22,7 @@ html {
 
 .site {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
      grid-template-areas:
         "header  header"
         "content buttons";
@@ -66,6 +66,7 @@ button {
 #toggle {
      display: block; 
      margin: 0 auto;
+     background-color: #80dfff;
 }
 
 .container {
@@ -81,10 +82,12 @@ button {
     flex-wrap: nowrap;
     justify-content: center;
     background-color: white;
-    width: 750px;
+    width: 700px;
     margin-right: auto;
     margin-left: auto;
     background-color: #dcffcc;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 .instructions {
@@ -105,8 +108,12 @@ button {
     margin: 20px;   
 }
 
-#reset {
+.tasks button {
+    background-color: #ff99cc;
+}
 
+#reset-button {
+    background-color: #dd99ff;
 }
 
 .water-glass {
