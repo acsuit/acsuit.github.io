@@ -76,7 +76,9 @@ button {
     margin: 2px;
 }
 
-
+button:focus {
+    outline: none;
+}
 
 #toggle {
      display: block;
