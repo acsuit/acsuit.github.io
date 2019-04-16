@@ -174,9 +174,17 @@ button:disabled {
     position: absolute;
 }
 
-.win-water {
-    background-image: linear-gradient(to right, red , orange, yellow, green);
+@keyframes partywater {
+  from {background: #e600e6;}
+  to {background: #00e6b8;}
 }
+
+.win-water {
+    animation-name: partywater;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
 
 
 
