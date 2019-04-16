@@ -37,10 +37,10 @@ $('.10percent').click(function() {
 });
 
 $('.17percent').click(function() {
-    $('.inner-glass').height(function(){
-    	waterPercent += 17;
-    	rightPercent = waterPercent + '%';
-    	return rightPercent;
+	$('.inner-glass').height(function(){
+    waterPercent += 17;
+    rightPercent = waterPercent + '%';
+    return rightPercent;
     });
 });
 
@@ -53,6 +53,7 @@ $('.tasks button').click(function(){
 	} else {
 		$('.score').html('<p>YOU WIN! '  + waterPercent + '</p>');
 		$('.tasks button').attr('disabled', 'disabled');
+		
 	};
 });
 

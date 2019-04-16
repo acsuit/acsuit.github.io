@@ -31,6 +31,8 @@ html {
     color: #003300;
 }
 
+
+
 .header {
     grid-area: header;
     grid-column-start: 1; 
@@ -62,6 +64,8 @@ button {
     border-radius: 3px;
     margin: 2px;
 }
+
+
 
 #toggle {
      display: block;
@@ -126,6 +130,10 @@ button {
     background-color: #dd99ff;
 }
 
+button:disabled {
+    background-color: #999999;
+}
+
 .water-glass {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -148,17 +156,6 @@ button {
     bottom: 0;
     position: absolute;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
