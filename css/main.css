@@ -123,11 +123,16 @@ button {
 }
 
 .tasks button {
-    background-color: #ff99cc;
+    background-color: #661aff;
+}
+
+.score p {
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
 }
 
 #reset-button {
-    background-color: #dd99ff;
+    background-color: #b300b3;
 }
 
 button:disabled {
