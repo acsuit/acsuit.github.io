@@ -29,6 +29,7 @@ html {
     font-family: 'Roboto', sans-serif;
     background-color: #eeffe6;
     color: #003300;
+    height: 100%;
 }
 
 
@@ -140,8 +141,6 @@ button:disabled {
 }
 
 .water-glass {
-    margin-top: 50px;
-    margin-bottom: 50px;
     width: 300px;
     height: 400px;
     border-left: 3px solid black;

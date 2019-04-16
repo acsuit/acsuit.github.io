@@ -46,18 +46,22 @@ $('.17percent').click(function() {
 
 $('.tasks button').click(function(){ 
 	if (waterPercent < 30) {
-		$('.score').html("<p>You're doing great! "  + waterPercent + '</p>');
+		$('.score').html("<p>You're doing great!</p>");
+		console.log('current: ' + waterPercent);
 	} else if (waterPercent < 70) {
-		$('.score').html("<p>Don't give up! "  + waterPercent + '</p>');
+		$('.score').html("<p>Don't give up!</p>");
+		console.log('current: ' + waterPercent);
 	} else if (waterPercent < 90) {
-		$('.score').html('<p>Almost there! '  + waterPercent + '</p>');
+		$('.score').html('<p>Almost there!</p>');
+		console.log('current: ' + waterPercent);
 	} else if (waterPercent > 90) {
 		$('.tasks button').attr('disabled', 'disabled');
-		$('.score').html('<p>You filled it too much, try again? '  + waterPercent + '</p>');
+		$('.score').html('<p>You filled it too much, try again?</p>');
+		console.log('current: ' + waterPercent);
 	} else {
-		$('.score').html('<p>Congrats, you filled your glass! '  + waterPercent + '</p>');
+		$('.score').html('<p>Congrats, you filled your glass!</p>');
 		$('.tasks button').attr('disabled', 'disabled');
-		
+		console.log('current: ' + waterPercent);		
 	};
 });
 
@@ -68,6 +72,7 @@ $('#reset-button').click(function() {
 		waterLevel = waterPercent + '%';
       	return waterLevel;
     });
-    $('.score').html('<p>RESET!' + waterPercent + '</p>');
+    $('.score').html("<p>Let's try again</p>");
+    console.log('current: ' + waterPercent);
     $('.tasks button').attr('disabled', false);
 });
