@@ -19,7 +19,9 @@ html {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+body {
+    background-color: #eeffe6;
+}
 .site {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -27,7 +29,6 @@ html {
         "header  header"
         "content buttons";
     font-family: 'Roboto', sans-serif;
-    background-color: #eeffe6;
     color: #003300;
 
 }
