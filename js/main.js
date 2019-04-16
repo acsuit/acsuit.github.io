@@ -60,6 +60,7 @@ $('.tasks button').click(function(){
 		console.log('current: ' + waterPercent);
 	} else {
 		$('.score').html('<p>Congrats, you filled your glass!</p>');
+		$('.inner-glass').addClass('win-water');
 		$('.tasks button').attr('disabled', 'disabled');
 		console.log('current: ' + waterPercent);		
 	};
@@ -73,6 +74,7 @@ $('#reset-button').click(function() {
       	return waterLevel;
     });
     $('.score').html("<p>Let's try again</p>");
+    $('.inner-glass').removeClass('win-water');
     console.log('current: ' + waterPercent);
     $('.tasks button').attr('disabled', false);
 });
