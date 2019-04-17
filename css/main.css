@@ -166,10 +166,16 @@ button:disabled {
     position: relative;
 }
 
-@keyframes drift {
+@keyframes blobby {
     
   from { transform: rotate(0deg); }
   from { transform: rotate(360deg); }
+  from {background: #00ccff}
+  to {background: #00b8e6} 
+}
+
+@keyframes watery {
+   
 }
 
 .inner-glass-left {
@@ -182,7 +188,7 @@ button:disabled {
     margin: auto;
     position: absolute;
     border-radius: 50%;
-    animation: drift 6s infinite linear;   
+    animation: blobby 6s infinite linear alternate;
 }
 
 .inner-glass-right {
@@ -195,8 +201,8 @@ button:disabled {
     left: 10%;
     margin: auto;
     position: absolute;
-    border-radius: 60%;
-    animation: drift 6s infinite linear;   
+    border-radius: 60%; 
+    animation: blobby 6500ms infinite linear alternate;
 }
 
 
