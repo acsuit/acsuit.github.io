@@ -177,19 +177,18 @@ button:disabled {
     background-color: #1affd1;
     width: 0%;
     height: 0%;
-    bottom: -300px;
+    bottom: -30px;
     right: 40px;
     margin-left: auto;
     margin-right: auto;
     position: absolute;
-    transform-origin: 50% 50%;
     border-radius: 50%;
     animation: driftright 4000ms infinite linear;   
 }
 
 @keyframes driftleft {
   from { transform: rotate(0deg); }    
-  from { transform: rotate(-360deg); }
+  from { transform: rotate(360deg); }
 }
 
 .inner-glass-left {
