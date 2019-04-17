@@ -13,34 +13,50 @@ $('#reset-button').click(function() {
 });
 
 $('.3percent').click(function() {
+	waterPercent += 3;
     $('.inner-glass').height(function(){
-    	waterPercent += 3;
     	rightPercent = waterPercent + '%';
     	return rightPercent;
+    });
+    $('.inner-glass').width(function(){
+	    rightPercent = (waterPercent * 1.25) + '%';
+	    return rightPercent;
     });
 });
 
 $('.7percent').click(function() {
-    $('.inner-glass').height(function(){
-    	waterPercent += 7;
+	waterPercent += 7;
+    $('.inner-glass').height(function(){	
     	rightPercent = waterPercent + '%';
     	return rightPercent;
+    });
+    $('.inner-glass').width(function(){
+	    rightPercent = (waterPercent * 1.25) + '%';
+	    return rightPercent;
     });
 });
 
 $('.10percent').click(function() {
+	waterPercent += 10;
     $('.inner-glass').height(function(){
-    	waterPercent += 10;
     	rightPercent = waterPercent + '%';
     	return rightPercent;
+    });
+    $('.inner-glass').width(function(){
+	    rightPercent = (waterPercent * 1.25) + '%';
+	    return rightPercent;
     });
 });
 
 $('.17percent').click(function() {
+	waterPercent += 17;
 	$('.inner-glass').height(function(){
-    waterPercent += 17;
-    rightPercent = waterPercent + '%';
-    return rightPercent;
+	    rightPercent = waterPercent + '%';
+	    return rightPercent;
+    });
+    $('.inner-glass').width(function(){
+	    rightPercent = (waterPercent * 1.25) + '%';
+	    return rightPercent;
     });
 });
 

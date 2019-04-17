@@ -172,17 +172,20 @@ button:disabled {
 }
 
 .inner-glass {
+    opacity: 0.5;
     background-image: linear-gradient(to right, #1affd1, #00b8e6);
-    transform-origin: 50% 48%;
-    border-radius: 43%;
-    animation: drift 3000ms infinite linear;
     background-color: #33cccc;
-    width: 100%;
+    width: 0%;
     height: 0%;
     bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
     position: absolute;
+    height: 10px;
+    transform-origin: 50% 48%;
+    border-radius: 50%;
+    animation: drift 3000ms infinite linear;   
 }
-
 
 
 @keyframes partywater {
