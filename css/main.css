@@ -172,7 +172,6 @@ button:disabled {
 }
 
 .inner-glass-left {
-    opacity: 0.9;
     background-color: #00ccff;
     width: 400px;
     left: -50px;
@@ -184,7 +183,6 @@ button:disabled {
 }
 
 .inner-glass-right {
-    opacity: 0.9;
     background-color: #00ccff;
     width: 100%;
     height: 0%;
