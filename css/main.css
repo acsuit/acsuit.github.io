@@ -172,33 +172,31 @@ button:disabled {
   from { transform: rotate(360deg); }
 }
 
-.inner-glass-right {
+.inner-glass-left {
     opacity: 0.7;
     background-color: #00ccff;
     width: 0%;
     height: 0%;
     bottom: -20px;
-    right: 40px;
-    margin-left: auto;
-    margin-right: auto;
+    right: 10%;
+    margin: auto;
     position: absolute;
     border-radius: 50%;
-    animation: drift 5s infinite linear;   
+    animation: drift 6s infinite linear;   
 }
 
-.inner-glass-left {
-    opacity: 0.7;
+.inner-glass-right {
+    opacity: 0.9;
     background-color: #00b8e6;
     width: 0%;
     height: 0%;
-    bottom: -10px;
+    bottom: -8px;
     right: 0;
-    left: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    left: 10%;
+    margin: auto;
     position: absolute;
     border-radius: 60%;
-    animation: drift 5s infinite linear;   
+    animation: drift 6s infinite linear;   
 }
 
 
