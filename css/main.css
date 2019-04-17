@@ -174,12 +174,12 @@ button:disabled {
 .inner-glass-left {
     opacity: 0.9;
     background-color: #00ccff;
-    width: 100%;
+    width: 400px;
+    left: -50px;
     height: 0%;
     bottom: 0;
     margin: auto;
     position: absolute;
-    border-radius: 10%;
     animation: watery 3s infinite linear alternate;
 }
 
@@ -191,7 +191,6 @@ button:disabled {
     bottom: 0;
     margin: auto;
     position: absolute;
-    border-radius: 2%;
 }
 
 
