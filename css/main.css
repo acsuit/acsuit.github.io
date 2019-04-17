@@ -166,25 +166,45 @@ button:disabled {
     position: relative;
 }
 
-@keyframes drift {
+@keyframes driftright {
+    
   from { transform: rotate(0deg); }
   from { transform: rotate(360deg); }
 }
 
-.inner-glass {
+.inner-glass-right {
     opacity: 0.5;
     background-image: linear-gradient(to right, #1affd1, #00b8e6);
     background-color: #33cccc;
     width: 0%;
-    height: 0%;
+    height: 10%;
     bottom: 0;
     margin-left: auto;
     margin-right: auto;
     position: absolute;
-    height: 10px;
-    transform-origin: 50% 48%;
+    transform-origin: 50% 50%;
     border-radius: 50%;
-    animation: drift 3000ms infinite linear;   
+    animation: driftright 4000ms infinite linear;   
+}
+
+@keyframes driftleft {
+  from { transform: rotate(360deg); }    
+  from { transform: rotate(0deg); }
+}
+
+.inner-glass-left {
+    opacity: 0.5;
+    background-image: linear-gradient(to right, #1affd1, #00b8e6);
+    background-color: #33cccc;
+    width: 0%;
+    height: 10%;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    transform-origin: 50% 50%;
+    border-radius: 50%;
+    animation: driftleft 4000ms infinite linear;   
 }
 
 

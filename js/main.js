@@ -5,7 +5,12 @@ $('#toggle').click(function() {
 var waterPercent = 0;
 
 $('#reset-button').click(function() {
-    $('.inner-glass').height(function(){
+    $('.inner-glass-left').height(function(){
+    	waterPercent = 0;
+		waterLevel = waterPercent + '%';
+      	return waterLevel;
+    });
+    $('.inner-glass-right').height(function(){
     	waterPercent = 0;
 		waterLevel = waterPercent + '%';
       	return waterLevel;
@@ -14,48 +19,80 @@ $('#reset-button').click(function() {
 
 $('.3percent').click(function() {
 	waterPercent += 3;
-    $('.inner-glass').height(function(){
+    $('.inner-glass-left').height(function(){
     	rightPercent = waterPercent + '%';
     	return rightPercent;
     });
-    $('.inner-glass').width(function(){
-	    rightPercent = (waterPercent * 1.25) + '%';
+    $('.inner-glass-left').width(function(){
+	    rightPercent = (waterPercent * 1.5) + '%';
+	    return rightPercent;
+    });
+    $('.inner-glass-right').height(function(){
+    	rightPercent = waterPercent + '%';
+    	return rightPercent;
+    });
+    $('.inner-glass-right').width(function(){
+	    rightPercent = (waterPercent * 1.5) + '%';
 	    return rightPercent;
     });
 });
 
 $('.7percent').click(function() {
 	waterPercent += 7;
-    $('.inner-glass').height(function(){	
+    $('.inner-glass-left').height(function(){	
     	rightPercent = waterPercent + '%';
     	return rightPercent;
     });
-    $('.inner-glass').width(function(){
-	    rightPercent = (waterPercent * 1.25) + '%';
+    $('.inner-glass-left').width(function(){
+	    rightPercent = (waterPercent * 1.5) + '%';
+	    return rightPercent;
+    });
+    $('.inner-glass-right').height(function(){	
+    	rightPercent = waterPercent + '%';
+    	return rightPercent;
+    });
+    $('.inner-glass-right').width(function(){
+	    rightPercent = (waterPercent * 1.5) + '%';
 	    return rightPercent;
     });
 });
 
 $('.10percent').click(function() {
 	waterPercent += 10;
-    $('.inner-glass').height(function(){
+    $('.inner-glass-left').height(function(){
     	rightPercent = waterPercent + '%';
     	return rightPercent;
     });
-    $('.inner-glass').width(function(){
-	    rightPercent = (waterPercent * 1.25) + '%';
+    $('.inner-glass-left').width(function(){
+	    rightPercent = (waterPercent * 1.5) + '%';
+	    return rightPercent;
+    });
+    $('.inner-glass-right').height(function(){
+    	rightPercent = waterPercent + '%';
+    	return rightPercent;
+    });
+    $('.inner-glass-right').width(function(){
+	    rightPercent = (waterPercent * 1.5) + '%';
 	    return rightPercent;
     });
 });
 
 $('.17percent').click(function() {
 	waterPercent += 17;
-	$('.inner-glass').height(function(){
+	$('.inner-glass-left').height(function(){
 	    rightPercent = waterPercent + '%';
 	    return rightPercent;
     });
-    $('.inner-glass').width(function(){
-	    rightPercent = (waterPercent * 1.25) + '%';
+    $('.inner-glass-left').width(function(){
+	    rightPercent = (waterPercent * 1.5) + '%';
+	    return rightPercent;
+    });
+	$('.inner-glass-right').height(function(){
+	    rightPercent = waterPercent + '%';
+	    return rightPercent;
+    });
+    $('.inner-glass-right').width(function(){
+	    rightPercent = (waterPercent * 1.5) + '%';
 	    return rightPercent;
     });
 });
