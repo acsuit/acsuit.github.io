@@ -167,10 +167,8 @@ button:disabled {
 }
 
 @keyframes watery {
-  from {transform: rotate(0deg)}
-  from {transform: rotate(5deg)}
-  from {transform: rotate(0deg)}
-  from {transform: rotate(-5deg)}      
+  from {transform: rotate(3deg)}
+  to {transform: rotate(-3deg)} 
 }
 
 .inner-glass-left {
@@ -181,7 +179,7 @@ button:disabled {
     bottom: 0;
     margin: auto;
     position: absolute;
-    border-radius: 5%;
+    border-radius: 10%;
     animation: watery 3s infinite linear alternate;
 }
 
@@ -193,6 +191,7 @@ button:disabled {
     bottom: 0;
     margin: auto;
     position: absolute;
+    border-radius: 2%;
 }
 
 
