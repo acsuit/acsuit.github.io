@@ -15,6 +15,7 @@ $('#reset-button').click(function() {
 		waterLevel = waterPercent + '%';
       	return waterLevel;
     });
+
 });
 
 $('.3percent').click(function() {
@@ -32,7 +33,7 @@ $('.3percent').click(function() {
     	return rightPercent;
     });
     $('.inner-glass-right').width(function(){
-	    rightPercent = (waterPercent * 1.5) + '%';
+	    rightPercent = (waterPercent * 1.75) + '%';
 	    return rightPercent;
     });
 });
@@ -52,7 +53,7 @@ $('.7percent').click(function() {
     	return rightPercent;
     });
     $('.inner-glass-right').width(function(){
-	    rightPercent = (waterPercent * 1.5) + '%';
+	    rightPercent = (waterPercent * 1.75) + '%';
 	    return rightPercent;
     });
 });
@@ -72,7 +73,7 @@ $('.10percent').click(function() {
     	return rightPercent;
     });
     $('.inner-glass-right').width(function(){
-	    rightPercent = (waterPercent * 1.5) + '%';
+	    rightPercent = (waterPercent * 1.75) + '%';
 	    return rightPercent;
     });
 });
@@ -92,7 +93,7 @@ $('.17percent').click(function() {
 	    return rightPercent;
     });
     $('.inner-glass-right').width(function(){
-	    rightPercent = (waterPercent * 1.5) + '%';
+	    rightPercent = (waterPercent * 1.75) + '%';
 	    return rightPercent;
     });
 });
