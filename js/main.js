@@ -73,6 +73,7 @@ $('#reset-button').click(function() {
 		waterLevel = waterPercent + '%';
       	return waterLevel;
     });
+
     $('.score').html("<p>Let's try again</p>");
     $('.inner-glass').removeClass('win-water');
     console.log('current: ' + waterPercent);
