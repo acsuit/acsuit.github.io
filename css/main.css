@@ -19,9 +19,13 @@ html {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+/* body and main page styles */
+
 body {
     background-color: #eeffe6;
 }
+
 .site {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -33,6 +37,7 @@ body {
 
 }
 
+/* header */ 
 
 .header {
     grid-area: header;
@@ -52,8 +57,9 @@ h1 {
     text-align: center;
 }
 
+/* general button styling */
+
 button {
-    background-color: #4CAF50;
     border: none;
     color: white;
     padding: 10px 25px;
@@ -70,6 +76,9 @@ button:focus {
     outline: none;
 }
 
+
+/* toggle button for info tray */
+
 #toggle {
      display: block;
      margin: 0 auto;
@@ -84,6 +93,37 @@ button:focus {
      border-style: dotted;
      margin-bottom: 10px;
 }
+
+/* button container on right */
+
+.buttons div {
+    grid-area: buttons;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;   
+}
+
+.buttons button {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
+    justify-content: right;
+}
+
+.tasks button {
+    background-color: #661aff;
+}
+
+#reset-button {
+    background-color: #b300b3;
+}
+
+button:disabled {
+    background-color: #999999;
+} /* this has to be here idk why */
+
+/* info tray that toggles */
 
 .tray {
     display: none;
@@ -111,41 +151,16 @@ button:focus {
     padding: 20px;
 }
 
+/* making the glass do its whole thing */
+
 .water-glass {
     grid-area: water-glass;
     text-align: center;
 }
 
-.buttons div {
-    grid-area: buttons;
-    display: flex;
-    flex-direction: column;
-    margin: 20px;   
-}
-
-.buttons button {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-left: 20%;
-    margin-right: 20%;
-    justify-content: right;
-}
-
-.tasks button {
-    background-color: #661aff;
-}
-
 .encourage p {
     font-family: 'Pacifico', cursive;
     font-size: 25px;
-}
-
-#reset-button {
-    background-color: #b300b3;
-}
-
-button:disabled {
-    background-color: #999999;
 }
 
 .outer-glass {
@@ -160,6 +175,8 @@ button:disabled {
     display: inline-block;
     position: relative;
 }
+
+/* some cool animation happens here */
 
 @keyframes watery {
   from {transform: rotate(3deg)}
@@ -189,6 +206,8 @@ button:disabled {
     position: absolute;
     animation: watery 5s infinite linear alternate-reverse;
 }
+
+/* some fun stuff when you hit the win condition */
 
 .win-water-left {
     background-color: #ac00e6;
