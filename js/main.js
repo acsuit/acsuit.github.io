@@ -10,6 +10,11 @@ $('#reset-button').click(function() {
 		waterLevel = waterPercent + '%';
       	return waterLevel;
     });
+    $('.inner-glass-right').height(function(){
+    	waterPercent = 0;
+		waterLevel = waterPercent + '%';
+      	return waterLevel;
+    });
 });
 
 $('.3percent').click(function() {
