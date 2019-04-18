@@ -3,11 +3,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Anna Suiter - @annasuits
 
 # THANKS
 
-    <name>
+    Eric Boyer
 
 # TECHNOLOGY COLOPHON
 
