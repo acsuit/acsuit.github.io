@@ -1,29 +1,35 @@
 $('#toggle').click(function() {
-	$('.container').toggle();
+	$('.tray').toggle();
 });
 
 var waterPercent = 0;
 
 $('#reset-button').click(function() {
-    $('.inner-glass-left').height(function(){
+    $('.water-left').height(function(){
     	waterPercent = 0;
 		waterLevel = waterPercent + '%';
       	return waterLevel;
     });
-    $('.inner-glass-right').height(function(){
+    $('.water-right').height(function(){
     	waterPercent = 0;
 		waterLevel = waterPercent + '%';
       	return waterLevel;
     });
+
+    $('.encourage').html("<p>Let's try again</p>");
+    $('.water-left').removeClass('win-water-left');
+    $('.water-right').removeClass('win-water-right');
+    console.log('current: ' + waterPercent);
+    $('.tasks button').attr('disabled', false);
 });
 
 $('.3percent').click(function() {
 	waterPercent += 3;
-    $('.inner-glass-left').height(function(){
+    $('.water-left').height(function(){
     	rightPercent = waterPercent + '%';
     	return rightPercent;
     });
-    $('.inner-glass-right').height(function(){
+    $('.water-right').height(function(){
     	rightPercent = waterPercent + '%';
     	return rightPercent;
     });
@@ -31,11 +37,11 @@ $('.3percent').click(function() {
 
 $('.7percent').click(function() {
 	waterPercent += 7;
-    $('.inner-glass-left').height(function(){	
+    $('.water-left').height(function(){	
     	rightPercent = waterPercent + '%';
     	return rightPercent;
     });
-    $('.inner-glass-right').height(function(){	
+    $('.water-right').height(function(){	
     	rightPercent = waterPercent + '%';
     	return rightPercent;
     });
@@ -43,11 +49,11 @@ $('.7percent').click(function() {
 
 $('.10percent').click(function() {
 	waterPercent += 10;
-    $('.inner-glass-left').height(function(){
+    $('.water-left').height(function(){
     	rightPercent = waterPercent + '%';
     	return rightPercent;
     });
-    $('.inner-glass-right').height(function(){
+    $('.water-right').height(function(){
     	rightPercent = waterPercent + '%';
     	return rightPercent;
     });
@@ -55,11 +61,11 @@ $('.10percent').click(function() {
 
 $('.17percent').click(function() {
 	waterPercent += 17;
-	$('.inner-glass-left').height(function(){
+	$('.water-left').height(function(){
 	    rightPercent = waterPercent + '%';
 	    return rightPercent;
     });
-	$('.inner-glass-right').height(function(){
+	$('.water-right').height(function(){
 	    rightPercent = waterPercent + '%';
 	    return rightPercent;
     });
@@ -67,36 +73,23 @@ $('.17percent').click(function() {
 
 $('.tasks button').click(function(){ 
 	if (waterPercent < 30) {
-		$('.score').html("<p>You're doing great!</p>");
+		$('.encourage').html("<p>You're doing great!</p>");
 		console.log('current: ' + waterPercent);
 	} else if (waterPercent < 70) {
-		$('.score').html("<p>Don't give up!</p>");
+		$('.encourage').html("<p>Don't give up!</p>");
 		console.log('current: ' + waterPercent);
 	} else if (waterPercent < 90) {
-		$('.score').html('<p>Almost there!</p>');
+		$('.encourage').html('<p>Almost there!</p>');
 		console.log('current: ' + waterPercent);
 	} else if (waterPercent > 90) {
 		$('.tasks button').attr('disabled', 'disabled');
-		$('.score').html('<p>You filled it too much, try again?</p>');
+		$('.encourage').html('<p>You filled it too much, try again?</p>');
 		console.log('current: ' + waterPercent);
 	} else {
-		$('.score').html('<p>Congrats, you filled your glass!</p>');
-		$('.inner-glass').addClass('win-water');
+		$('.encourage').html('<p>Congrats, you filled your glass!</p>');
+		$('.water-left').addClass('win-water-left');
+		$('.water-right').addClass('win-water-right');
 		$('.tasks button').attr('disabled', 'disabled');
 		console.log('current: ' + waterPercent);		
 	};
-});
-
-
-$('#reset-button').click(function() {
-	waterPercent = 0;
-    $('.inner-glass').height(function(){
-		waterLevel = waterPercent + '%';
-      	return waterLevel;
-    });
-
-    $('.score').html("<p>Let's try again</p>");
-    $('.inner-glass').removeClass('win-water');
-    console.log('current: ' + waterPercent);
-    $('.tasks button').attr('disabled', false);
 });

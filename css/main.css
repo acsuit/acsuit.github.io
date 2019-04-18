@@ -27,7 +27,7 @@ body {
     grid-template-columns: 1fr 1fr;
      grid-template-areas:
         "header  header"
-        "content buttons";
+        "water-glass buttons";
     font-family: 'Roboto', sans-serif;
     color: #003300;
 
@@ -85,12 +85,12 @@ button:focus {
      margin-bottom: 10px;
 }
 
-.container {
+.tray {
     display: none;
     justify-content: center;
 }
 
-.rules {
+.info-outer {
     padding: 0 18px;
     overflow: hidden;
     display: flex;
@@ -111,8 +111,8 @@ button:focus {
     padding: 20px;
 }
 
-.content {
-    grid-area: content;
+.water-glass {
+    grid-area: water-glass;
     text-align: center;
 }
 
@@ -135,7 +135,7 @@ button:focus {
     background-color: #661aff;
 }
 
-.score p {
+.encourage p {
     font-family: 'Pacifico', cursive;
     font-size: 25px;
 }
@@ -148,7 +148,7 @@ button:disabled {
     background-color: #999999;
 }
 
-.water-glass {
+.outer-glass {
     width: 300px;
     height: 400px;
     border-left: 3px solid black;
@@ -166,7 +166,7 @@ button:disabled {
   to {transform: rotate(-3deg)} 
 }
 
-.inner-glass-left {
+.water-left {
     opacity: .6;
     background-color: #99e6e6;
     width: 400px;
@@ -178,7 +178,7 @@ button:disabled {
     animation: watery 3s infinite linear alternate;
 }
 
-.inner-glass-right {
+.water-right {
     opacity: .3;
     background-color: #00ccff;
     width: 400px;
@@ -190,16 +190,13 @@ button:disabled {
     animation: watery 5s infinite linear alternate-reverse;
 }
 
-
-@keyframes partywater {
-  from {background: #e600e6;}
-  to {background: #00e6b8;}
+.win-water-left {
+    background-color: #ac00e6;
+    opacity: .3;
 }
 
-.win-water {
-    animation-name: partywater;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
+.win-water-right {
+    background-color: #e600e6;
 }
 
 
