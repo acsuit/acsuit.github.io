@@ -167,7 +167,8 @@ button:disabled {
 }
 
 .inner-glass-left {
-    background-color: #00ccff;
+    opacity: .6;
+    background-color: #99e6e6;
     width: 400px;
     left: -50px;
     height: 0%;
@@ -178,12 +179,15 @@ button:disabled {
 }
 
 .inner-glass-right {
+    opacity: .3;
     background-color: #00ccff;
-    width: 100%;
+    width: 400px;
     height: 0%;
-    bottom: 0;
+    right: -60px;
+    bottom: -5px;
     margin: auto;
     position: absolute;
+    animation: watery 5s infinite linear alternate-reverse;
 }
 
 
